@@ -1,0 +1,94 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#splash {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+}
+#splash>h1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 100px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: rgba(255, 255, 255, 0.79);
+}
+#splash #players {
+  display: flex;
+  justify-content: space-around;
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+#splash #players button {
+  width: 70px;
+  height: 50px;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background: none;
+  margin: 2px;
+  background-color: rgba(255, 255, 255, 0.79);
+  font-family: 'Raleway', sans-serif;
+}
+#scoresSection {
+  display: flex;
+  justify-content: center;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#splashReturn {
+  position: absolute;
+  margin-top: 20px;
+  width: 100px;
+  height: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+.playerSquare {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 2px;
+  height: 49%;
+  width: 49%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255,255,255,0.8);
+  font-size: 3rem;
+}
+.playerSquare button {
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: none;
+  Padding: 50px;
+}
+
+.playerSquare select {
+  position: absolute; 
+  top: 2%;
+  left: 2%;
+  background: none;
+  border: 1px solid #333;
+  border-radius: 5px; 
+}
