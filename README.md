@@ -1,0 +1,2 @@
+# magicScoreCounter
+Simple score counter 
