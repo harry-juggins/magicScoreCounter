@@ -15,10 +15,10 @@ for (i = 0; i < playerButtons.length; i++) {
 function addPlayerSquares(num) {
   for (i = 1; i <= num; i++) {
     //Create content of each player div
-    var name = document.createElement('input');
-    name.style.zIndex = "15";
-    name.style.position = "absolute";
-    name.style.display = "flex";
+//     var name = document.createElement('input');
+//     name.style.zIndex = "15";
+//     name.style.position = "absolute";
+//     name.style.display = "flex";
     var minus = document.createElement('button');
     minus.innerHTML = "-";
     minus.style.width = "50%";
