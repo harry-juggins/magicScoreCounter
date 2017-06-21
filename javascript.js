@@ -4,10 +4,11 @@ var splashReturn = document.getElementById("splashReturn");
 var main = document.getElementById("main");
 
 for (i = 0; i < playerButtons.length; i++) {
-  playerButtons[i].addEventListener("click", function() {
+  playerButtons[i].addEventListener("click", function(e) {
     addPlayerSquares(this.value);
     splash.style.display = "none";
     main.style.display = "flex";
+    console.log(e);
   });
 }
 
